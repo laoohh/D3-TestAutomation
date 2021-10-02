@@ -1,0 +1,368 @@
+id: LwngJH2sSUGpaQhkLp9NTw
+projectId: byKK_1dEFk2OPDkBhUksXA
+projectName: Hans' Project
+created: 2021-10-02T00:33:17.6532726Z
+owner: Hans Hwang
+protocol: 1
+tests:
+- id: Dx5bA76kmEusBW6zYaGsVg
+  name: Assign 3 officers to first dispatch
+  description: Dispatch Operations Center
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-06-24T04:29:51.0000000
+  modificationDate: 2021-06-25T22:03:31.0000000
+  settings:
+    automationAssistant: true
+    appId: c9_ob26I5kuHC6MPzyE3oQ
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: c9_ob26I5kuHC6MPzyE3oQ
+    name: Disney GsStage QA VSOC
+    url: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+    platform: Web
+  steps:
+  - id: -yjWz98rekOndOEHN__yjA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: AAEimbN6XEu7XJSB6VWqSg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: ROpbb2vX6kato3aTtajjpg
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: nc9XKGN-l06y8h6Jw_vgAw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: _qaNdA0B8EmG7I72GZNBrg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: qkc7-ApVGEm3PQH7CMxf_w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: W8nR7NV6JkitHj1S28yqQw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: x7dii8XIWkusqE8Hv8sQoQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: zaOMfr1d0UO5M5jzbvAa_Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: P2MpkVv8bESwKNawug2GDQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: rb2olGQHm0eaPePLhyEs8A
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: 7a6D0UkqTUGRPvsTnhpo3Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: LRIHE8jKuEqo4GiwIqnHDQ
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: 2TIOTJqdxkOH42T2Lu914A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: AlwaysPass
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Y23rT7SukkCHjbD4gFRCsg
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: 7oqaSNB-2k2HehWr3Ttd7w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+    type: Input
+  - name: DispatchIDtype
+    description: ''
+    value: ''
+    type: Input
+  - name: DispatchID
+    description: ''
+    value: ''
+    type: Input
+  - name: Username
+    description: ''
+    value: hans
+    type: Input
+  - name: Password
+    description: ''
+    value: D1sney2020!
+    type: Input
+auxTests: []
+elements:
+- id: nc9XKGN-l06y8h6Jw_vgAw
+  name: Selected Dispatch
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //a[3][. = 'Selected Dispatch']
+    priority: 0
+  - name: XPATH
+    value: //div[3]/div[2]//a[3]
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[3]/div[2]/div[4]/div[1]/a[3]
+    priority: 2
+  - name: CSSSELECTOR
+    value: "[id = '200103']"
+    priority: 3
+- id: qkc7-ApVGEm3PQH7CMxf_w
+  name: OnDuty Officers 1st row - TD
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTY
+    name: TableCell
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 1
+- id: 7a6D0UkqTUGRPvsTnhpo3Q
+  name: Assign
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#assign'
+    priority: 0
+  - name: XPATH
+    value: //a[. = 'Assign']
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div[1]/div[1]/div[1]/div[2]/a[1]
+    priority: 2
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/a[1]
+    priority: 3
+- id: 2TIOTJqdxkOH42T2Lu914A
+  name: OK
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'OK']
+    priority: 0
+  - name: XPATH
+    value: //button
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[3]/div[3]/button
+    priority: 2
+- id: 7oqaSNB-2k2HehWr3Ttd7w
+  name: Save3
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#dsp_toolbar_saveExisting'
+    priority: 0
+  - name: XPATH
+    value: //a[2][. = 'Save']
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div/a[2]
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[1]/div/div[3]/div[2]/div/a[2]
+    priority: 3
+- id: AAEimbN6XEu7XJSB6VWqSg
+  name: dispatch center first row - 1727
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTY
+    name: TableCell
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 1
+  - name: XPATH
+    value: //td[1][. = '1727']
+    priority: 2
+- id: x7dii8XIWkusqE8Hv8sQoQ
+  name: Dispatch available officers 2nd row - TD
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTY
+    name: TableCell
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[2]/td[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[2]/td[1]
+    priority: 1
+- id: P2MpkVv8bESwKNawug2GDQ
+  name: dispatch on duty officers 3rd row - TD
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTY
+    name: TableCell
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[3]/td[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[3]/td[1]
+    priority: 1
+projectParameters: []
+addons: []
