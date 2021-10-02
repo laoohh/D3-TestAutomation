@@ -1,0 +1,2701 @@
+id: 3iCV37yB8k2W-DWljL_dTA
+projectId: byKK_1dEFk2OPDkBhUksXA
+projectName: Hans' Project
+created: 2021-10-02T00:15:43.5306127Z
+owner: Hans Hwang
+protocol: 1
+tests:
+- id: ndP2GOGKUE2Kbq3rA2GmOQ
+  name: TC0001 - Dispatch Escalate to IR with only one assignee, IR default assignee should be dispatch assignee, IR default site should be dispatch site
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2021-06-24T17:42:52.0000000
+  modificationDate: 2021-06-24T17:43:54.0000000
+  settings:
+    automationAssistant: true
+    appId: c9_ob26I5kuHC6MPzyE3oQ
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: c9_ob26I5kuHC6MPzyE3oQ
+    name: Disney GsStage QA VSOC
+    url: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+    platform: Web
+  steps:
+  - id: QirG9gll-keR-sWROOr7mA
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: false
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '{{ApplicationURL}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: hHQ6wiQxB0SccdMf1mhCIw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Test
+    targetTestId: fCdOX2nptEKe-RzGB87Zaw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: ApplicationURL
+      value: '{{ApplicationURL}}'
+      direction: Input
+    - name: Username
+      value: '{{Username}}'
+      direction: Input
+    - name: Password
+      value: '{{Password}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: _DK2VbAqWUWpLSft208PCg
+    comments: This step was auto generated from several steps
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Test
+    targetTestId: 4d5MYahxIEi8RRzTFTF_tw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: AlwaysPass
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 3V4w2Mq3pk6D0TtJrPkPrQ
+    comments: This step was auto generated from several steps
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Test
+    targetTestId: m3NBfyiyPk-FO09WPa-XPw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: AlwaysPass
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: HnbKP3ADFEKhxbdhVtYhTA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Test
+    targetTestId: PyTJYgjCRUyJuNLjAT4LuA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: ApplicationURL
+      value: '{{ApplicationURL}}'
+      direction: Input
+    - name: DispatchIDtype
+      value: '{{DispatchIDtype}}'
+      direction: Input
+    - name: DispatchID
+      value: '{{DispatchID}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 16NkWuwD5EOoVZDg3zXvKg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: 4C7w0owkmk-tzdOWcRD93Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{CurrentSite}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: yUD1G7Pu_EmIHjxSc3rIhg
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: nc9XKGN-l06y8h6Jw_vgAw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: e35U_m5xGEaPnQkk4EogUw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: 5swYF6xF5kSqoNsVUDEl7A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: EEkT6ZYyhkyXYb3cViPEmw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    elementId: 3W9Q0GZVMUq1PbMnsHdkhw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{AssignedFirstOfficerName}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: AW5TntbHQU-_Xuv-iPsK6g
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Action
+    elementId: XDn_TJDHYkKmoxHcV4eMEA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: F5t2Cs4wV0SEeQEiT78JFA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    elementId: Djhoy5HB9UWJoJOZ70ktUg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: Z9DqM7_IyEGmUe4J1_ZFyw
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    elementId: Fd3DCAKM4k2surqwqkRE4A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: PanEVpbShUykdrkOzEZ6-Q
+    enabled: true
+    invertResult: false
+    order: 13
+    repeat: 1
+    type: Action
+    elementId: aMuZBzzmakC0lIlhdYOZUw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: LK0vNZ2hb0mImxatdCE36Q
+    enabled: true
+    invertResult: false
+    order: 14
+    repeat: 1
+    type: Action
+    elementId: 6sv0_4TLCkaVfsuAvQTa5A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: 8njRCVMHfky0X8lTEwppzg
+    enabled: true
+    invertResult: false
+    order: 15
+    repeat: 1
+    type: Action
+    elementId: 6sv0_4TLCkaVfsuAvQTa5A
+    settings:
+      sleepTime: -1
+      timeout: 35000
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{IRtitle}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: pMKym6z0Dkyc1b6R8YtXUg
+    comments: ''
+    enabled: false
+    invertResult: false
+    order: 16
+    repeat: 1
+    type: Action
+    elementId: oPbdswg2H0OLNlgTh3pLsA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: Gupta_StgQA, Deepti
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: hXEoa1X7JECYB0JMZOx--w
+    comments: ''
+    enabled: false
+    invertResult: false
+    order: 17
+    repeat: 1
+    type: Action
+    elementId: iDnTOyMunkSCnvhZeZO3uQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: Corporate
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: ZzaxeovFSUSvZfiK3wtI8w
+    enabled: true
+    invertResult: false
+    order: 18
+    repeat: 1
+    type: Action
+    elementId: Lb6BLXpqDUKtG8jKj64NhA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: ZhO-qAhogEaRjhfdo_3EEA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 19
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 3000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: SG2NdCAA9E2iDh1BZ3WS6A
+    enabled: true
+    invertResult: false
+    order: 20
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 2
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: fynbh3jD5kKrsef4l96u2Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 21
+    repeat: 1
+    type: Action
+    elementId: lHw62b1uQUeqtZ_bokzhYg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: General Information
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/form/div[3]/div[1]/div[4]/iframe
+  - id: w53gEgidbk2ZLgnOFez_yA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 22
+    repeat: 1
+    type: Action
+    elementId: 7qyffsX7m0qGakQgTt7obQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{CurrentSite}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/form/div[3]/div[1]/div[4]/iframe
+  - id: Vqa1OpejmEe3i3bFRJl8NQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 23
+    repeat: 1
+    type: Action
+    elementId: 7qyffsX7m0qGakQgTt7obQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{AssigneeNameAfterSave}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/form/div[3]/div[1]/div[4]/iframe
+  - id: Rj_iNIFSukSRdu1Udvtk5A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 24
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: WB46ztRQDkCN9qtCPDZIXA
+      source: Store
+      addonId: D5P7e9ZMO0aPwXNrWJE9iA
+    parameterMaps:
+    - name: sourceString
+      value: '{{AssigneeNameAfterSave}}'
+      direction: Input
+    - name: regex
+      value: /([^,]+)/g
+      direction: Input
+    - name: limit
+      value: 2
+      direction: Input
+    - name: result
+      value: ''
+      direction: Output
+    - name: indexOfElement
+      value: 0
+      direction: Input
+    - name: valueOfElement
+      value: '{{AssigneeLastName}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: _4EbQFNm-ESRo2qJgmZ3sw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 25
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: WB46ztRQDkCN9qtCPDZIXA
+      source: Store
+      addonId: D5P7e9ZMO0aPwXNrWJE9iA
+    parameterMaps:
+    - name: sourceString
+      value: '{{AssigneeNameAfterSave}}'
+      direction: Input
+    - name: regex
+      value: /([^,]+)/g
+      direction: Input
+    - name: limit
+      value: 2
+      direction: Input
+    - name: result
+      value: ''
+      direction: Output
+    - name: indexOfElement
+      value: 1
+      direction: Input
+    - name: valueOfElement
+      value: '{{AssigneeFirstName}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: mYshI2mu9UKWuVnmoxPK-A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 26
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: Fqq_9nGBdk2VLY34af0P5w
+      source: Store
+      addonId: D5P7e9ZMO0aPwXNrWJE9iA
+    parameterMaps:
+    - name: inputString
+      value: '{{AssignedFirstOfficerName}}'
+      direction: Input
+    - name: substring
+      value: '{{AssigneeFirstName}}'
+      direction: Input
+    - name: caseSensitive
+      value: Yes
+      direction: Input
+    - name: result
+      value: ''
+      direction: Output
+    - name: expectedResult
+      value: true
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 9sSgoQ1BxkKXjetDxugVOA
+    comments: ''
+    enabled: false
+    invertResult: false
+    order: 27
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: WB46ztRQDkCN9qtCPDZIXA
+      source: Store
+      addonId: D5P7e9ZMO0aPwXNrWJE9iA
+    parameterMaps:
+    - name: sourceString
+      value: '{{AssigneeLastName}}'
+      direction: Input
+    - name: regex
+      value: /([^\)]+)/g
+      direction: Input
+    - name: limit
+      value: 2
+      direction: Input
+    - name: result
+      value: ''
+      direction: Output
+    - name: indexOfElement
+      value: 1
+      direction: Input
+    - name: valueOfElement
+      value: '{{AssigneeLastName2}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: jSYhSvL1CESZsRSgtDfdZw
+    comments: ''
+    enabled: false
+    invertResult: false
+    order: 28
+    repeat: 1
+    type: Action
+    elementId: 7qyffsX7m0qGakQgTt7obQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{AssigneeFirstName}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/form/div[3]/div[1]/div[4]/iframe
+  - id: yy8csBIUz0GHuI1bjx0SDg
+    comments: ''
+    enabled: false
+    invertResult: false
+    order: 29
+    repeat: 1
+    type: Action
+    elementId: 7qyffsX7m0qGakQgTt7obQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{AssigneeLastName}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/form/div[3]/div[1]/div[4]/iframe
+  - id: hTyQaAGrQUy4T-kI2WQl1A
+    enabled: true
+    invertResult: false
+    order: 30
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6cc71ddb-1aaf-433c-aa94-56d944aac433
+      source: System
+    parameterMaps:
+    - name: index
+      value: 2
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: nyEUskCKFkGSfmqSYY0weg
+    enabled: true
+    invertResult: false
+    order: 31
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: JVF0IhpOrEqpNdIM1xO1Fg
+    enabled: true
+    invertResult: false
+    order: 32
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6cc71ddb-1aaf-433c-aa94-56d944aac433
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: UEN8jqKTH06i8GYRBbnbmQ
+    enabled: true
+    invertResult: false
+    order: 33
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 0
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 0pfkymYwRkKH0-_VPxbXTg
+    enabled: false
+    invertResult: false
+    order: 34
+    repeat: 1
+    type: Action
+    elementId: eXnMU0tVWU2s4O2ItkOAdA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{AssigneeLastName}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+    type: Input
+  - name: Username
+    description: ''
+    value: hans
+    type: Input
+  - name: Password
+    description: ''
+    value: D1sney2020!
+    type: Input
+  - name: IRtitle
+    description: ''
+    value: TC0001 - Dispatch Escalate to IR with only one assignee, IR default assignee should be dispatch assignee, IR default site should be dispatch site
+    type: Input
+  - name: CurrentSite
+    description: ''
+    value: ''
+    type: Input
+  - name: AssignedFirstOfficerName
+    description: ''
+    value: ''
+    type: Input
+  - name: DispatchIDtype
+    description: ''
+    value: ''
+    type: Input
+  - name: DispatchID
+    description: ''
+    value: ''
+    type: Input
+  - name: AssigneeFirstName
+    description: ''
+    value: ''
+    type: Input
+  - name: AssigneeLastName
+    description: ''
+    value: ''
+    type: Input
+  - name: AssigneeNameAfterSave
+    description: ''
+    value: ''
+    type: Input
+  - name: AssigneeLastName2
+    description: ''
+    value: ''
+    type: Input
+  tags:
+  - Disney-1st-Sprint
+auxTests:
+- id: fCdOX2nptEKe-RzGB87Zaw
+  name: Login VSOC - Open Dispatch Center
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2021-06-23T17:39:30.0000000
+  modificationDate: 2021-06-23T17:43:22.0000000
+  settings:
+    automationAssistant: true
+    appId: c9_ob26I5kuHC6MPzyE3oQ
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: 41RrneAciUONtdLE4suOXg
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '[[ApplicationURL4GsStateQAvSOC]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: XCxLMhcxtkSNRf_fqVMoKg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: vQMvQA4O4EWZTHha6naqXQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: LLbp-d7GlUeX8XB5gzs9sA
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: x3zVCNDvmkeu6Jt290SUkw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Rkq4AaH47UyHWM3J11q3Rg
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: x3zVCNDvmkeu6Jt290SUkw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Username}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: GHbRHekkCEiG2Griq5gFWQ
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: dOuua4nFQUm9MxymM3kUWg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: BZrfrDSA-UaVSJauDtlhmQ
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: dOuua4nFQUm9MxymM3kUWg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Password}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: yIHZPq8_sUWbWZP6pT-a1w
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: UfuLyauimkieybdCq-XkMQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: yOsa8mJGp0OJOY7NET_awQ
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: nUMP00rdGkyq565SE_WfSA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    elementId: E9pWsUvh5EiAYUd6MYAluA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: a59f3a20-d08d-4293-9add-b279f92e6c41
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: y30eHnc8IUWwY5BoHxFTGg
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Action
+    elementId: E9pWsUvh5EiAYUd6MYAluA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: Y12rInSh-UqRIEA_SUjuYg
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    elementId: _NuuIhZUrEaJZkPE8I_61A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: QbtAWpjNckKPFaASJnLpFQ
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    elementId: qiaU2h4EfUeXnPv4O1IJzA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: RKCMGGRR1US7G-qBEtTzNg
+    enabled: true
+    invertResult: false
+    order: 13
+    repeat: 1
+    type: Action
+    elementId: zNzv6aoEZEmoxu5vbmugog
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: 2AfowKJFG0yLksw6f0zY9A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 14
+    repeat: 1
+    type: Action
+    elementId: fNvTZlTWIEO1a4HAQKyb_Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+    type: Input
+  - name: Username
+    description: ''
+    value: hans
+    type: Input
+  - name: Password
+    description: ''
+    value: D1sney2020!
+    type: Input
+- id: 4d5MYahxIEi8RRzTFTF_tw
+  name: Create a new dispatch in dispatch center
+  description: Click top-right sub window "+ Create New"
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-06-23T16:46:10.0000000
+  modificationDate: 2021-06-25T22:02:51.0000000
+  settings:
+    automationAssistant: true
+    appId: c9_ob26I5kuHC6MPzyE3oQ
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: PtGbbBVX8kOJYUck5PpEnw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: vJjJ32GiGUeqZ0tmQlzZwA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: Active Dispatches
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: TKpGHelCA0W5CBpnsrgaHQ
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: PbmfayJ_S0ySn7LTu3MV8g
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: dcdD2i3EzU2k-oxzQ2_yiA
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: lyvmM4jhdUCmRkhEPSwZFg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: XSdV54-rl0G6hzBtBNSEOA
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: wuiFJ6SOukCm-cXWinKqAw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: eXzABHeB3ESp_63yZDY2tA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 26JGf9X-hky0qS-QR8pWKQ
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: V5lkxdJaE0-9QDT12SjJwQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: kJUDHtu52kKhcQX04uXzfw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: DZJwfYDboUaYMsngCDeYVQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: pA_4wuaHh0i05n3l6iLuUA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: em5PcPWG30if-XJnZT9e8g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    elementId: pA_4wuaHh0i05n3l6iLuUA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{DispatchIDtype}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: HptTXzbv4U2vTDjwfNqcbg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: V2lD6-P-2US6fA7P4fJYfg
+      source: Store
+      addonId: D5P7e9ZMO0aPwXNrWJE9iA
+    parameterMaps:
+    - name: beginIndex
+      value: 0
+      direction: Input
+    - name: endIndex
+      value: 3
+      direction: Input
+    - name: inputString
+      value: '{{DispatchIDtype}}'
+      direction: Input
+    - name: result
+      value: '{{DispatchID}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: _vLE0zzeVkKOONO42tZRKA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    elementId: vCwOWu8YU0iAdoimbfdadQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{DispatchID}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  parameters:
+  - name: DispatchIDtype
+    description: ''
+    value: ''
+    type: Input
+  - name: DispatchID
+    description: ''
+    value: ''
+    type: Input
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+    type: Input
+- id: m3NBfyiyPk-FO09WPa-XPw
+  name: Dispatch - Put all Officers OnDuty
+  description: Dispatch Operations Center
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-06-23T16:47:04.0000000
+  modificationDate: 2021-06-30T18:10:17.0000000
+  settings:
+    automationAssistant: true
+    appId: c9_ob26I5kuHC6MPzyE3oQ
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: _7Cjd1dSk0K_nJcQzaDC-A
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: 9RwkNbSQMkSz-vsCE9zNBA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: ncHuLVT9JkGoTr_ZgIEkgA
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 2
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 4zT0Armk3Eelmo5oBzE0jA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: kibWwwvKiEKVeYuGBp03uA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: cJYAtKJzb0-OVOJ00Uozeg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: wwbetb4P4EST5VgjRLfGeQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 1VmRao4VyUGtp04oLJBCyQ
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: 1S4AO4OK-U27yaNaLUDlNA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 52yvCG561kKfEaB3B2gwgg
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: tvOSSv18_U-7xcxHydpNGw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: a7A2ZYddRkaQbQO16jW6EA
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6cc71ddb-1aaf-433c-aa94-56d944aac433
+      source: System
+    parameterMaps:
+    - name: index
+      value: 2
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: fCkBFreYo06n6cI7exeJGQ
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+    type: Input
+  - name: DispatchIDtype
+    description: ''
+    value: ''
+    type: Input
+  - name: DispatchID
+    description: ''
+    value: ''
+    type: Input
+- id: PyTJYgjCRUyJuNLjAT4LuA
+  name: Assign an officer to first dispatch
+  description: Dispatch Operations Center
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-06-23T17:04:40.0000000
+  modificationDate: 2021-06-25T22:03:22.0000000
+  settings:
+    automationAssistant: true
+    appId: c9_ob26I5kuHC6MPzyE3oQ
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: JFfAi9WMQEyqy0Gd2LgDbA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: AAEimbN6XEu7XJSB6VWqSg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: G5jgV0ewmka7z6aDCYb9xQ
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: nc9XKGN-l06y8h6Jw_vgAw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: k4AWIcPP6ked4TEF-Mtq2Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: qkc7-ApVGEm3PQH7CMxf_w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: cDxs1SYUm0-wTwlaB2ezBA
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: 7a6D0UkqTUGRPvsTnhpo3Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  - id: yBUhrvaAt0C81qa6j7JikQ
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: 2TIOTJqdxkOH42T2Lu914A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: AlwaysPass
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: iNzSc9vTlk2uXYRLPDgxpw
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: 7oqaSNB-2k2HehWr3Ttd7w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'FrameOnLifeServer']|//*[@name = 'FrameOnLifeServer']|/html/body/form/iframe
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+    type: Input
+  - name: DispatchIDtype
+    description: ''
+    value: ''
+    type: Input
+  - name: DispatchID
+    description: ''
+    value: ''
+    type: Input
+elements:
+- id: x3zVCNDvmkeu6Jt290SUkw
+  name: username
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#username'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='username']"
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div/input[1]
+    priority: 2
+  - name: XPATH
+    value: /html/body/form/div[4]/div/div[2]/div[1]/input[1]
+    priority: 3
+- id: vQMvQA4O4EWZTHha6naqXQ
+  name: Username1
+  type:
+    id: jUwODgyNjAyNzk2NTk2MzU
+    name: label
+    source: System
+  locators:
+  - name: XPATH
+    value: //label[. = 'Username']
+    priority: 0
+  - name: XPATH
+    value: //label[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/div[4]/div/div[2]/div[1]/label[1]
+    priority: 2
+- id: dOuua4nFQUm9MxymM3kUWg
+  name: password
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#password'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='password']"
+    priority: 1
+  - name: XPATH
+    value: //div/div/input[2]
+    priority: 2
+  - name: XPATH
+    value: /html/body/form/div[4]/div/div[2]/div[1]/input[2]
+    priority: 3
+- id: UfuLyauimkieybdCq-XkMQ
+  name: Button_Login
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#Button_Login'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='Button_Login']"
+    priority: 1
+  - name: XPATH
+    value: //div/div[2]/input
+    priority: 2
+  - name: XPATH
+    value: /html/body/form/div[4]/div/div[2]/input
+    priority: 3
+- id: E9pWsUvh5EiAYUd6MYAluA
+  name: hamburgerOpen
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#hamburgerOpen'
+    priority: 0
+  - name: XPATH
+    value: //a/div/img[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[1]/td/div/div[2]/a/div/img[1]
+    priority: 2
+- id: _NuuIhZUrEaJZkPE8I_61A
+  name: More
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //span[. = 'More']
+    priority: 0
+  - name: XPATH
+    value: //li[12]/span
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[1]/td/div/div[2]/div[3]/div/li[12]/span
+    priority: 2
+- id: qiaU2h4EfUeXnPv4O1IJzA
+  name: Dispatches
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //span[. = 'Dispatches']
+    priority: 0
+  - name: XPATH
+    value: //li[5]/span
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[1]/td/div/div[2]/div[3]/div/li[5]/span
+    priority: 2
+- id: PbmfayJ_S0ySn7LTu3MV8g
+  name: New Dispatch IMG1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/img
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div/div[2]/img
+    priority: 1
+- id: lyvmM4jhdUCmRkhEPSwZFg
+  name: Select a Dispatch Type
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //span/span/span[. = 'Select a Dispatch Type']
+    priority: 0
+  - name: XPATH
+    value: //tr[3]/td[1]/div/div/div/div[2]/span/span/span[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div/div/div[4]/div[2]/div/div/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[3]/td[1]/div/div/div/div[2]/span/span/span[1]
+    priority: 2
+- id: wuiFJ6SOukCm-cXWinKqAw
+  name: Administrative
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTk
+    name: ListItem
+    source: System
+  locators:
+  - name: XPATH
+    value: //li[. = 'Administrative']
+    priority: 0
+  - name: XPATH
+    value: //div/div/div[3]/ul/li[2]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[13]/div/div[3]/ul/li[2]
+    priority: 2
+- id: V5lkxdJaE0-9QDT12SjJwQ
+  name: Save2
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#dsp_toolbar_saveNew'
+    priority: 0
+  - name: XPATH
+    value: //a[1][. = 'Save']
+    priority: 1
+  - name: XPATH
+    value: //body/div[1]/div/div/div[2]/div/div[1]/a[1]
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[1]/div/div/div[2]/div/div[1]/a[1]
+    priority: 3
+- id: 9RwkNbSQMkSz-vsCE9zNBA
+  name: Schedule
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //a[. = 'Schedule']
+    priority: 0
+  - name: XPATH
+    value: //div[1]/div/li[3]/a
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[1]/td/div/div[3]/div[1]/div/li[3]/a
+    priority: 2
+- id: 1S4AO4OK-U27yaNaLUDlNA
+  name: cb_OffDutyOfficerList
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDk
+    name: Checkbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cb_OffDutyOfficerList'
+    priority: 0
+  - name: XPATH
+    value: //div[3]/div/div[3]/div[2]//input
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/div[4]/div[2]/div[3]/div/div[3]/div[2]/div/table/thead/tr/th[1]/div/input
+    priority: 2
+- id: tvOSSv18_U-7xcxHydpNGw
+  name: On Duty
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#btnUp'
+    priority: 0
+  - name: XPATH
+    value: //button[. = ' On Duty']
+    priority: 1
+  - name: XPATH
+    value: //div[2]/button[2]
+    priority: 2
+  - name: XPATH
+    value: /html/body/form/div[4]/div[2]/div[2]/button[2]
+    priority: 3
+- id: nc9XKGN-l06y8h6Jw_vgAw
+  name: Selected Dispatch
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //a[3][. = 'Selected Dispatch']
+    priority: 0
+  - name: XPATH
+    value: //div[3]/div[2]//a[3]
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[3]/div[2]/div[4]/div[1]/a[3]
+    priority: 2
+  - name: CSSSELECTOR
+    value: "[id = '200103']"
+    priority: 3
+- id: qkc7-ApVGEm3PQH7CMxf_w
+  name: OnDuty Officers 1st row - TD
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTY
+    name: TableCell
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 1
+- id: 7a6D0UkqTUGRPvsTnhpo3Q
+  name: Assign
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#assign'
+    priority: 0
+  - name: XPATH
+    value: //a[. = 'Assign']
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div[1]/div[1]/div[1]/div[2]/a[1]
+    priority: 2
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/a[1]
+    priority: 3
+- id: 2TIOTJqdxkOH42T2Lu914A
+  name: OK
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'OK']
+    priority: 0
+  - name: XPATH
+    value: //button
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[3]/div[3]/button
+    priority: 2
+- id: 7oqaSNB-2k2HehWr3Ttd7w
+  name: Save3
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#dsp_toolbar_saveExisting'
+    priority: 0
+  - name: XPATH
+    value: //a[2][. = 'Save']
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div/a[2]
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[1]/div/div[3]/div[2]/div/a[2]
+    priority: 3
+- id: AAEimbN6XEu7XJSB6VWqSg
+  name: dispatch center first row - 1727
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTY
+    name: TableCell
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 1
+  - name: XPATH
+    value: //td[1][. = '1727']
+    priority: 2
+- id: vJjJ32GiGUeqZ0tmQlzZwA
+  name: Active Dispatches (691)
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div[1]/div[1]/div[2]/div[1]/div[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]
+    priority: 1
+  - name: XPATH
+    value: //div[1]/div[. = 'Active Dispatches (691)']
+    priority: 2
+- id: pA_4wuaHh0i05n3l6iLuUA
+  name: Dispatch ID - 1728 - Administrative
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //body/div[1]/div/div/div[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div/div[2]/div[1]
+    priority: 1
+  - name: XPATH
+    value: //div[. = '1728 - Administrative']
+    priority: 2
+- id: vCwOWu8YU0iAdoimbfdadQ
+  name: Dispatch center list first row ID - 1728
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTY
+    name: TableCell
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[1]
+    priority: 1
+  - name: XPATH
+    value: //td[. = '1728']
+    priority: 2
+- id: kibWwwvKiEKVeYuGBp03uA
+  name: Date and Shift
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#lbDateRange'
+    priority: 0
+  - name: XPATH
+    value: //span[. = 'Date and Shift']
+    priority: 1
+  - name: XPATH
+    value: //div/table/tbody/tr/td[1]/span
+    priority: 2
+  - name: XPATH
+    value: /html/body/form/div[4]/div[1]/table/tbody/tr/td[1]/span
+    priority: 3
+- id: wwbetb4P4EST5VgjRLfGeQ
+  name: Off-Duty Officers (0)
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[3]/div/div[3]/div/span[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/div[4]/div[2]/div[3]/div/div[3]/div[1]/span[1]
+    priority: 1
+  - name: XPATH
+    value: //span[. = 'Off-Duty Officers (0) ']
+    priority: 2
+- id: zNzv6aoEZEmoxu5vbmugog
+  name: Dispatch Operations Center1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //li[3]/a[. = 'Dispatch Operations Center']
+    priority: 0
+  - name: XPATH
+    value: //li/div/ul/li[3]/a
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[1]/td/div/div[2]/div[3]/div/li[5]/div/ul/li[3]/a
+    priority: 2
+- id: fNvTZlTWIEO1a4HAQKyb_Q
+  name: Active Dispatches (696)
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div[1]/div[1]/div[2]/div[1]/div[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]
+    priority: 1
+  - name: XPATH
+    value: //div[1]/div[. = 'Active Dispatches (696)']
+    priority: 2
+- id: XDn_TJDHYkKmoxHcV4eMEA
+  name: Escalate to IR
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#dsp_toolbar_toIR'
+    priority: 0
+  - name: XPATH
+    value: //a[. = 'Escalate to IR']
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div/a[5]
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[1]/div/div[4]/div[2]/div/a[5]
+    priority: 3
+- id: Fd3DCAKM4k2surqwqkRE4A
+  name: SPAN3
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div/div/div[1]/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[1]/td/div/div/div/div[2]/span/span/span[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[28]/div[2]/div/div/div[1]/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[1]/td/div/div/div/div[2]/span/span/span[1]
+    priority: 1
+- id: aMuZBzzmakC0lIlhdYOZUw
+  name: Administrative1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTk
+    name: ListItem
+    source: System
+  locators:
+  - name: XPATH
+    value: //li[3][. = 'Administrative']
+    priority: 0
+  - name: XPATH
+    value: //div/div/div[3]/ul/li[3]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[29]/div/div[3]/ul/li[3]
+    priority: 2
+- id: 6sv0_4TLCkaVfsuAvQTa5A
+  name: Title
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: "[name=' Title']"
+    priority: 0
+  - name: XPATH
+    value: //div[2]/div/div/div[1]/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[2]//input
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[28]/div[2]/div/div/div[1]/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[2]/td/div/div/div/div[2]/span/input
+    priority: 2
+- id: oPbdswg2H0OLNlgTh3pLsA
+  name: Gupta_StgQA, Deepti
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //span/span/span[. = 'Gupta_StgQA, Deepti']
+    priority: 0
+  - name: XPATH
+    value: //tr[4]/td[2]/div/div/div/div[2]/span/span/span[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[28]/div[2]/div/div/div[1]/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[4]/td[2]/div/div/div/div[2]/span/span/span[1]
+    priority: 2
+- id: iDnTOyMunkSCnvhZeZO3uQ
+  name: Corporate
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //tr[4]/td[1]/div/div/div/div[2]/span/span/span[. = 'Corporate']
+    priority: 0
+  - name: XPATH
+    value: //tr[4]/td[1]/div/div/div/div[2]/span/span/span[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[28]/div[2]/div/div/div[1]/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[4]/td[1]/div/div/div/div[2]/span/span/span[1]
+    priority: 2
+- id: 4C7w0owkmk-tzdOWcRD93Q
+  name: Corporate1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[3]/div[2]/span/span/span[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[1]/td/div/div[3]/div[2]/span/span/span[1]
+    priority: 1
+  - name: XPATH
+    value: //span/span/span[. = 'Corporate']
+    priority: 2
+- id: 5swYF6xF5kSqoNsVUDEl7A
+  name: Assigned Officers (1)
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[3]/div[2]/div[1]/div[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]
+    priority: 1
+  - name: XPATH
+    value: //div[1]/div[. = 'Assigned Officers (1)']
+    priority: 2
+- id: Djhoy5HB9UWJoJOZ70ktUg
+  name: Incident Type *
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div/div/div/div[. = 'Incident Type *']
+    priority: 0
+  - name: XPATH
+    value: //div[2]/div/div/div[1]/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[1]/td/div/div/div/div[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[31]/div[2]/div/div/div[1]/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[1]/td/div/div/div/div[1]
+    priority: 2
+- id: Lb6BLXpqDUKtG8jKj64NhA
+  name: Escalate
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#escalate'
+    priority: 0
+  - name: XPATH
+    value: //a[. = 'Escalate']
+    priority: 1
+  - name: XPATH
+    value: //div/div/div[2]/div[2]/a[1]
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[28]/div[2]/div/div/div[2]/div[2]/a[1]
+    priority: 3
+- id: lHw62b1uQUeqtZ_bokzhYg
+  name: General Information
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[. = 'General Information']
+    priority: 0
+  - name: XPATH
+    value: //div/table/tbody/tr[1]//div
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/div[3]/table/tbody/tr[1]/td/div
+    priority: 2
+- id: 7qyffsX7m0qGakQgTt7obQ
+  name: Assigned To Label
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#irView_AssignedToLabel'
+    priority: 0
+  - name: XPATH
+    value: //tr[8]/td[2]/span
+    priority: 1
+  - name: XPATH
+    value: /html/body/form/div[3]/table/tbody/tr[2]/td/table/tbody/tr[8]/td[2]/span
+    priority: 2
+  - name: XPATH
+    value: //span[. = '(Corporate)Gupta_StgQA, Deepti']
+    priority: 3
+- id: 3W9Q0GZVMUq1PbMnsHdkhw
+  name: First assigned officer - Deepti Gupta_StgQA
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTY
+    name: TableCell
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[3]/div[2]/div[3]/table/tbody/tr[1]/td[3]
+    priority: 0
+  - name: XPATH
+    value: /html/body/form/table/tbody/tr[2]/td/div[1]/div[2]/div[1]/div[3]/div[2]/div[3]/table/tbody/tr[1]/td[3]
+    priority: 1
+  - name: XPATH
+    value: //div[3]/div//td[. = 'Deepti Gupta_StgQA']
+    priority: 2
+- id: eXnMU0tVWU2s4O2ItkOAdA
+  name: PersonName
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: "[name=' PersonName']"
+    priority: 0
+  - name: XPATH
+    value: //tr[4]/td[1]/div//input
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/div/div[4]/div[4]/div[2]/div/div/div/div/table/tbody/tr/td/div[1]/table/tbody/tr[4]/td[1]/div/div/div/div[2]/span/input
+    priority: 2
+projectParameters:
+- id: WK1EpB17O0Wwwi4WRh_zoQ
+  name: ApplicationURL4GsStateQAvSOC
+  description: ''
+  value: https://gsstage.d3securityonline.com/QA/VSOC/Login.aspx
+addons:
+- id: D5P7e9ZMO0aPwXNrWJE9iA
+  source: Store
+  version: 2.10
+  actions:
+  - id: WB46ztRQDkCN9qtCPDZIXA
+    name: Split string with regex
+    description: Splits {{sourceString}} around matches of given regular expression {{regex}} limited by {{limit}}
+    className: SplitStringWithRegex
+  - id: Fqq_9nGBdk2VLY34af0P5w
+    name: String contains?
+    description: Is {{inputString}} contains {{substring}}?
+    className: StringContains
+  - id: V2lD6-P-2US6fA7P4fJYfg
+    name: Get substring in range
+    description: Get substring of {{inputString}} from {{beginIndex}} to {{endIndex}}
+    className: GetStringSubstring
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 6824793E7A01EB296E01FBD3040191C826B9C9F194842B9DBCFA0E766EBF8F1F
